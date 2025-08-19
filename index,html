@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
- <Title>Hello Github Pages!</title>
+  <title>Hello GitHub Pages!</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    h1 {
+      color: #007acc;
+      font-size: 3em;
+    }
+    p {
+      color: #333;
+      font-size: 1.2em;
+    }
+    .fancy-box {
+      background: #fff;
+      border: 2px solid #007acc;
+      border-radius: 10px;
+      width: 60%;
+      margin: 40px auto;
+      padding: 20px;
+      box-shadow: 2px 2px 10px #ccc;
+    }
+  </style>
 </head>
 <body>
- <h1>Welcome to my Github Pages site!</h1>
- <p>This site is hosted from my Github repository.</p>
+  <div class="fancy-box">
+    <h1>Welcome to my GitHub Pages site!</h1>
+    <p>This site is hosted from my GitHub repository.</p>
+  </div>
 </body>
 </html>
-   
