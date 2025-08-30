@@ -3,32 +3,65 @@
 <head>
   <title>About</title>
   <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f8;
+    }
     .navbar {
-      background: #007acc;
-      padding: 10px 0;
-      text-align: center;
+      background: #1976d2;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
     }
     .navbar a {
-      color: white;
+      display: inline-block;
+      color: #fff;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-size: 1.2em;
+      padding: 18px 32px;
+      font-size: 1.1em;
+      font-weight: 500;
+      transition: background 0.2s, color 0.2s;
+      border-bottom: 2px solid transparent;
+      letter-spacing: 0.02em;
     }
-    .navbar a:hover {
-      text-decoration: underline;
+    .navbar a:hover, .navbar a.active {
+      background: #1565c0;
+      color: #fff;
+      border-bottom: 2px solid #fff;
+    }
+    .container {
+      max-width: 700px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      padding: 40px 30px;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 0;
+      color: #1976d2;
+      font-size: 2.8em;
+    }
+    p {
+      color: #333;
+      font-size: 1.25em;
     }
   </style>
 </head>
 <body>
-  <div class="navbar">
+  <nav class="navbar">
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <a href="about.html" class="active">About</a>
     <a href="contact.html">Contact</a>
+  </nav>
+  <div class="container">
+    <h1>About Me</h1>
+    <p>This is the About page.  
+    You can write something about yourself or your project here!</p>
   </div>
-
-  <h1>About Me</h1>
-  <p>This is the About page.</p>
-  <a href="about.html">About</a>
 </body>
 </html>
